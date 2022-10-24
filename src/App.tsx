@@ -1,15 +1,13 @@
-import './styles/main.css';
 import { NavHome }  from './components/navHome'
-
-
+import { AppRoutes } from "./routes"
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
-
   return (
-    <div>
-      <NavHome colapse/>
-
-    </div>
+    <>
+      <NavHome colapse />
+      <AppRoutes />
+    </>
   )
 }
 
