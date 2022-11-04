@@ -3,10 +3,7 @@ import { useState } from "react";
 
 
 interface NavHomeProps {
-  colapse: boolean
-  
-
-  
+  colapse: boolean;
 }
 
 export function NavHome({colapse}: NavHomeProps) {
