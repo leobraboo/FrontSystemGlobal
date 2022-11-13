@@ -1,4 +1,4 @@
-import { NavHome } from "../../components/navHome"
+import { NavHome } from "../../components/Navegation/navHome"
 
 export function PageSide() {
   return (

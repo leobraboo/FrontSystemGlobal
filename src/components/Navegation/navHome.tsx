@@ -1,6 +1,6 @@
 import { UserCircle, UserList, Truck, Trash, TrendUp, Tote, Tag, Storefront, ShoppingCart, Package, Gear } from "phosphor-react";
 import { useState } from "react";
-import { ButtonHome } from "./form/buttonHome";
+import { ButtonHome } from "../form/buttonHome";
 import { Container, Content } from "./styles";
 
 
