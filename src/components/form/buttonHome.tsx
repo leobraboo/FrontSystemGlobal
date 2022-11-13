@@ -1,3 +1,4 @@
+import { ButtonStyle, TextButton } from "./styles";
 
 
 interface ButtonHomeProps {
@@ -9,16 +10,15 @@ interface ButtonHomeProps {
 
 export function ButtonHome({children, colapse, Text}:ButtonHomeProps) {
   return (
-    <div className='w-full h-10 flex  bg-zinc-900 border-l-4 border-blue-400 rounded hover:bg-zinc-700' >
-    <button className="flex  justify-center items-center p-4  ">
-        <a className="flex flex-row gap-5">  {children}  </a>
+    <div>
+    <ButtonStyle>
+        <a>  {children}  </a>
         {
           colapse ? (
-            <h1>aaaaaa</h1>
-
+            <TextButton>aaaaaa</TextButton>
           ): <></>
         }
-    </button>
+    </ButtonStyle>
 
 </div>
   )

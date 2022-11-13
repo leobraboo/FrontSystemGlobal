@@ -2,8 +2,8 @@ import { createGlobalStyle } from "styled-components";
 
 export default createGlobalStyle`
 body, html {
-  height: 50%;
-  width: 50%;
+  height: 100vh;
+  width: 100vw;
   background-color: #C0C0C0;
   padding: 0;
   margin: 0;
