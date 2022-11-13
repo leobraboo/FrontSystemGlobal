@@ -1,6 +1,5 @@
 import { ButtonStyle, TextButton } from "./styles";
 
-
 interface ButtonHomeProps {
     children ?: JSX.Element;
     Text?: JSX.Element;
@@ -12,7 +11,7 @@ export function ButtonHome({children, colapse, Text}:ButtonHomeProps) {
   return (
     <div>
     <ButtonStyle>
-        <a>  {children}  </a>
+        <div></div>   
         {
           colapse ? (
             <TextButton>aaaaaa</TextButton>
