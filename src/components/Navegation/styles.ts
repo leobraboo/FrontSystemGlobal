@@ -12,19 +12,18 @@ export const Container = styled.div`
   gap: 60px;
   border-right: 5px solid #00CED1;
   `
-  export const Containeractive = styled.div`
-  height: 100vh; 
+export const Containeractive = styled.div`
+  height: 100vh;
+  width: 60px;
   background: red;
   align-items: center;
   padding: 10px;
   position: fixed;
   gap: 60px;
   border-right: 5px solid red;
-  z-index: 1000;
-
   `
 
-  export const UserContainer = styled.div`
+export const UserContainer = styled.div`
   display: flex;
   flex-direction: column;
   width: 280px;
@@ -34,21 +33,17 @@ export const Container = styled.div`
   padding: 10px;
   gap: 40px;
   color: white;
-
   `
 
-
-
-  export const Content = styled.div`
+export const Content = styled.div`
   display: flex;
   flex-direction: column;
   background: #1C1C1C; 
   align-items: center;
   gap: 5px;
-
   `
 
-  export const IconButton = styled.div`
+export const IconButton = styled.div`
   display: flex;
   color: white; 
   flex-direction: column;

@@ -1,13 +1,19 @@
 import {
   IoPersonCircleOutline, IoPersonAdd,
-  IoStorefrontOutline,IoReaderOutline, IoStatsChartSharp,
-  IoSettingsOutline,IoCartOutline , IoCashOutline , 
-  IoDocumentTextOutline , IoHeadset ,IoLogOutOutline
+  IoStorefrontOutline, IoReaderOutline, IoStatsChartSharp,
+  IoSettingsOutline, IoCartOutline, IoCashOutline,
+  IoDocumentTextOutline, IoHeadset, IoLogOutOutline
 } from "react-icons/io5";
 import { TbTruck } from "react-icons/tb";
+
 import { useState } from "react";
-import { Container, Content, IconButton, ButtonStyle, TextButton, UserContainer, Containeractive } from "./styles";
 import { Link } from "react-router-dom";
+
+import {
+  Container, Content, IconButton,
+  ButtonStyle, TextButton, UserContainer,
+  Containeractive
+} from "./styles";
 
 
 interface NavHomeProps {
@@ -18,13 +24,13 @@ export function NavHome({ colapse }: NavHomeProps) {
   const [open, setOpen] = useState(false);
   return (
 
-    <Container className={`${ open ? "w-72" : Containeractive } duration-300 `} onClick={() => setOpen(!open)}>
+    <Container className={`${open ? "w-72" : "w-2"} duration-300`} onClick={() => setOpen(!open)}>
       <UserContainer>
-        <IconButton  as={Link} to="/">
+        <IconButton as={Link} to="/">
           <IoPersonCircleOutline size={70} /> ROOTS
         </IconButton>
       </UserContainer>
-      <Content onClick={(colapse) => setOpen(!colapse)}>
+      <Content onClick={() => setOpen(!colapse)}>
         <ButtonStyle as={Link} to="/Clients" >
           <IconButton> <IoPersonAdd size={25} /> </IconButton>
           {colapse ? (
