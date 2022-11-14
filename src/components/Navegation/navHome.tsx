@@ -6,7 +6,7 @@ import {
 } from "react-icons/io5";
 import { TbTruck } from "react-icons/tb";
 import { useState } from "react";
-import { Container, Content, IconButton, ButtonStyle, TextButton, UserContainer } from "./styles";
+import { Container, Content, IconButton, ButtonStyle, TextButton, UserContainer, Containeractive } from "./styles";
 
 
 interface NavHomeProps {
@@ -14,18 +14,17 @@ interface NavHomeProps {
 }
 
 export function NavHome({ colapse }: NavHomeProps) {
-  const [open, setOpen] = useState(true);
-
+  const [open, setOpen] = useState(false);
   return (
 
-    <Container onClick={() => setOpen((state) => !state)}>
-      <UserContainer >
+    <Container className={`${ open ? "w-72" : Containeractive } duration-300 `} onClick={() => setOpen(!open)}>
+      <UserContainer>
         <IconButton>
           <IoPersonCircleOutline size={70} /> ROOTS
         </IconButton>
       </UserContainer>
-      <Content>
-        <ButtonStyle>
+      <Content onClick={(colapse) => setOpen(!colapse)}>
+        <ButtonStyle >
           <IconButton> <IoPersonAdd size={25} /> </IconButton>
           {colapse ? (
             <TextButton> Clientes </TextButton>

@@ -4,7 +4,6 @@ import styled from "styled-components";
 export const Container = styled.div`
   display: flex;
   flex-direction: column;
-  width: 300px;
   height: 100vh; 
   background: #1C1C1C; 
   align-items: center;
@@ -12,8 +11,19 @@ export const Container = styled.div`
   position: fixed;
   gap: 60px;
   border-right: 5px solid #00CED1;
+  `
+  export const Containeractive = styled.div`
+  height: 100vh; 
+  background: red;
+  align-items: center;
+  padding: 10px;
+  position: fixed;
+  gap: 60px;
+  border-right: 5px solid red;
+  z-index: 1000;
 
   `
+
   export const UserContainer = styled.div`
   display: flex;
   flex-direction: column;
@@ -31,7 +41,6 @@ export const Container = styled.div`
 
   export const Content = styled.div`
   display: flex;
-  width: 100%;
   flex-direction: column;
   background: #1C1C1C; 
   align-items: center;
