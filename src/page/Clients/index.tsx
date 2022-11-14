@@ -1,9 +1,10 @@
+import { Fcliente } from '../../components/Clientes'
+
+
 export function Clients(){
   return (
       <>
-      <h1>
-      Clients
-      </h1>
+      <Fcliente/>
       </>
   )  
 }
