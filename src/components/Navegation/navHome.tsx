@@ -1,8 +1,8 @@
 import {
   IoPersonCircleOutline, IoPersonAdd,
-  IoBriefcaseOutline, IoStorefrontOutline,
-  IoReaderOutline, IoStatsChartSharp,
-  IoSettingsOutline, IoPricetagsOutline
+  IoStorefrontOutline,IoReaderOutline, IoStatsChartSharp,
+  IoSettingsOutline,IoCartOutline , IoCashOutline , 
+  IoDocumentTextOutline , IoHeadset ,IoLogOutOutline
 } from "react-icons/io5";
 import { TbTruck } from "react-icons/tb";
 import { useState } from "react";
@@ -26,7 +26,7 @@ export function NavHome({ colapse }: NavHomeProps) {
       </UserContainer>
       <Content>
         <ButtonStyle>
-          <IconButton> <IoPersonAdd size={30} /> </IconButton>
+          <IconButton> <IoPersonAdd size={25} /> </IconButton>
           {colapse ? (
             <TextButton> Clientes </TextButton>
           ) : <></>
@@ -34,7 +34,7 @@ export function NavHome({ colapse }: NavHomeProps) {
         </ButtonStyle>
 
         <ButtonStyle>
-          <IconButton> <IoBriefcaseOutline size={30} /> </IconButton>
+          <IconButton> <IoCartOutline size={25} /> </IconButton>
           {colapse ? (
             <TextButton> Produtos </TextButton>
           ) : <></>
@@ -42,7 +42,7 @@ export function NavHome({ colapse }: NavHomeProps) {
         </ButtonStyle>
 
         <ButtonStyle>
-          <IconButton> <IoStorefrontOutline size={30} /> </IconButton>
+          <IconButton> <IoStorefrontOutline size={25} /> </IconButton>
           {colapse ? (
             <TextButton> Vendas </TextButton>
           ) : <></>
@@ -50,7 +50,7 @@ export function NavHome({ colapse }: NavHomeProps) {
         </ButtonStyle>
 
         <ButtonStyle>
-          <IconButton> <IoReaderOutline size={30} /> </IconButton>
+          <IconButton> <IoReaderOutline size={25} /> </IconButton>
           {colapse ? (
             <TextButton> Nota fiscal </TextButton>
           ) : <></>
@@ -58,7 +58,15 @@ export function NavHome({ colapse }: NavHomeProps) {
         </ButtonStyle>
 
         <ButtonStyle>
-          <IconButton> <IoStatsChartSharp size={30} /> </IconButton>
+          <IconButton> <IoCashOutline size={25} /> </IconButton>
+          {colapse ? (
+            <TextButton> Financeiro </TextButton>
+          ) : <></>
+          }
+        </ButtonStyle>
+
+        <ButtonStyle>
+          <IconButton> <IoStatsChartSharp size={25} /> </IconButton>
           {colapse ? (
             <TextButton> Gráficos </TextButton>
           ) : <></>
@@ -66,7 +74,7 @@ export function NavHome({ colapse }: NavHomeProps) {
         </ButtonStyle>
 
         <ButtonStyle>
-          <IconButton> <TbTruck size={30} /> </IconButton>
+          <IconButton> <TbTruck size={25} /> </IconButton>
           {colapse ? (
             <TextButton> Transportadora </TextButton>
           ) : <></>
@@ -74,7 +82,7 @@ export function NavHome({ colapse }: NavHomeProps) {
         </ButtonStyle>
 
         <ButtonStyle>
-          <IconButton> <IoPricetagsOutline size={30} /> </IconButton>
+          <IconButton> <IoDocumentTextOutline size={25} /> </IconButton>
           {colapse ? (
             <TextButton> Relátorios </TextButton>
           ) : <></>
@@ -82,13 +90,28 @@ export function NavHome({ colapse }: NavHomeProps) {
         </ButtonStyle>
 
         <ButtonStyle>
-          <IconButton> <IoSettingsOutline size={30} /> </IconButton>
+          <IconButton> <IoSettingsOutline size={25} /> </IconButton>
           {colapse ? (
             <TextButton> Configurações </TextButton>
           ) : <></>
           }
         </ButtonStyle>
 
+        <ButtonStyle>
+          <IconButton> <IoHeadset size={25} /> </IconButton>
+          {colapse ? (
+            <TextButton> Suporte </TextButton>
+          ) : <></>
+          }
+        </ButtonStyle>
+
+        <ButtonStyle>
+          <IconButton> <IoLogOutOutline size={25} /> </IconButton>
+          {colapse ? (
+            <TextButton> sair </TextButton>
+          ) : <></>
+          }
+        </ButtonStyle>
 
       </Content>
     </Container>

@@ -35,7 +35,7 @@ export const Container = styled.div`
   flex-direction: column;
   background: #1C1C1C; 
   align-items: center;
-  gap: 30px;
+  gap: 5px;
 
   `
 
@@ -45,8 +45,8 @@ export const Container = styled.div`
   flex-direction: column;
   align-items: center;
 
-
-
+  :hover{
+    color: #00CED1;
   `
 export const ButtonStyle = styled.button`
   display: flex;
@@ -55,14 +55,22 @@ export const ButtonStyle = styled.button`
   height: 50px;
   border: none;
   border-radius: 10px;
-  background: #363636	; 
+  background: #1C1C1C	; 
   align-items: center;
   gap: 30px;
+
+  :hover{
+    background: #363636	;
+  }
 `
 
 export const TextButton = styled.text`
-font-size: 1.2rem;
+font-size: 1rem;
 align-items: center;
-color: #F0F8FF	;
+color: #F0F8FF;
+
+:hover{
+  color: #00CED1;
+}
 `
 

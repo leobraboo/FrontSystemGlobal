@@ -1,11 +1,11 @@
 import { AppRoutes } from "./routes"
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { PageSide } from "./page/SideBar";
+import { NavHome } from "./components/Navegation/navHome";
 
 function App() {
   return (
     <>
-      <PageSide />
+      <NavHome colapse />
       <AppRoutes />
     </>
   )
