@@ -19,8 +19,8 @@ export function NavHome({ colapse }: NavHomeProps) {
   return (
 
     <Container className={`${ open ? "w-72" : Containeractive } duration-300 `} onClick={() => setOpen(!open)}>
-      <UserContainer as={Link} to="/">
-        <IconButton>
+      <UserContainer>
+        <IconButton  as={Link} to="/">
           <IoPersonCircleOutline size={70} /> ROOTS
         </IconButton>
       </UserContainer>
