@@ -66,6 +66,7 @@ export const ButtonStyle = styled.button`
   border-radius: 10px;
   background: #1C1C1C	; 
   align-items: center;
+  text-decoration: none;
   gap: 30px;
 
   :hover{
