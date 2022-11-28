@@ -5,6 +5,7 @@ import { Configs } from "../page/Configs";
 import { Financial } from "../page/financial";
 import { Grafics } from "../page/graphics";
 import {Home} from "../page/Home";
+import { PageLogin } from "../page/Login";
 import { NoteFiscale } from "../page/NoteFiscale";
 import { Products } from "../page/Products/Index";
 import { Reports } from "../page/reports";
@@ -13,7 +14,8 @@ import { Sales } from "../page/Sales";
 export function AppRoutes() {
   return (
     <Routes>
-      <Route path="/" element={<Home />}></Route>
+      <Route path="/" element={<PageLogin />}></Route>
+      <Route path="/Home" element={<Home />}></Route>
       <Route path="/Carrying" element={<Carrying />}></Route>
       <Route path="/Clients" element={<Clients />}></Route>
       <Route path="/Products" element={<Products />}></Route>
