@@ -28,13 +28,16 @@ border-radius: 20px;
   width:100%;
 }
 `
-
+export const ContentBtn = styled.div`
+margin-top: 1rem;
+`
 export const ButtonLogin = styled(Button)`
 
 color: white;
 background: #8A2BE2;
 border-radius: 10px;
 box-shadow: 2px 2px 10px black;
+
 `
 export const SlideBtt = styled.div`
 width: 100%;

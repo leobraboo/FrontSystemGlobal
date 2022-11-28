@@ -1,7 +1,8 @@
 // import { useCallback, useState } from 'react';
 // import { ILogin } from '../../../../../interface/ILogin'
 import { FloatingLabel, Form, Card} from 'react-bootstrap';
-import { ButtonLogin, CardStyled , SlideBtt , SbttLeft , SbttRight  } from './styles';
+import { Link } from 'react-router-dom';
+import { ButtonLogin, CardStyled , SlideBtt , SbttLeft , SbttRight, ContentBtn  } from './styles';
 
 
 export function CardGeneral() {
@@ -25,11 +26,11 @@ export function CardGeneral() {
           <FloatingLabel style={{ marginTop:"1rem", width: "100%" }} label="Senha" className="mb-4">
             <Form.Control style={{ background: "#363636" , color:"white" , height: "30px" }} type="password" name="password"/>
           </FloatingLabel>
-          <div style={{ marginTop:"1rem" }} className="d-grid">
-            <ButtonLogin variant="" size="">
+          <ContentBtn as={Link} to="/home" className="d-grid">
+            <ButtonLogin>
               Entrar
             </ButtonLogin>
-          </div>
+          </ContentBtn>
           {/* <div style={{ width: "100%", display: "flex", justifyContent: "center" }}>
             <a href="http://localhost:3001/">Não é cadastrado ? Clique aqui</a>
           </div> */}
