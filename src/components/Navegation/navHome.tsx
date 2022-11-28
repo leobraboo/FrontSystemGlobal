@@ -14,6 +14,7 @@ import {
   ButtonStyle, TextButton, UserContainer,
   active} from "./styles";
 
+import { sizes } from './styles';
 
 interface NavHomeProps {
   colapse: boolean;
@@ -23,13 +24,13 @@ export function NavHome({ colapse }: NavHomeProps) {
   const [open, setOpen] = useState(false);
   return (
 
-    <Container className={`${open ? Container : active}`} onClick={() => setOpen(!open)}>
+    <Container className={` ${open ? "w-72" : "w-2"}`} onClick={() => setOpen(!open)}>
       <UserContainer>
         <IconButton as={Link} to="/">
           <IoPersonCircleOutline size={70} /> ROOTS
         </IconButton>
       </UserContainer>
-      <Content className={`${open ? "w-72" : "w-2"}`} onClick={() => setOpen(!open)}>
+      <Content>
         <ButtonStyle as={Link} to="/Clients" >
           <IconButton> <IoPersonAdd size={25} /> </IconButton>
           {colapse ? (

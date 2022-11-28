@@ -7,27 +7,27 @@ import { ContentClient } from './styles';
 export function Fcliente() {
   return (
     <ContentClient>
-      <Form>
+      <Form style={{ marginTop: "100px" }}>
         <Row className="mb-3">
           <Form.Group as={Col} controlId="formGridEmail">
-            <Form.Label>Email</Form.Label>
-            <Form.Control type="email" placeholder="Enter email" />
+            <Form.Label>Nome</Form.Label>
+            <Form.Control type="text" placeholder="" />
           </Form.Group>
 
           <Form.Group as={Col} controlId="formGridPassword">
-            <Form.Label>Password</Form.Label>
-            <Form.Control type="password" placeholder="Password" />
+            <Form.Label>CPF/CNPJ</Form.Label>
+            <Form.Control type="text" placeholder="" />
           </Form.Group>
         </Row>
 
         <Form.Group className="mb-3" controlId="formGridAddress1">
-          <Form.Label>Address</Form.Label>
-          <Form.Control placeholder="1234 Main St" />
+          <Form.Label>Endereço</Form.Label>
+          <Form.Control placeholder="" />
         </Form.Group>
 
         <Form.Group className="mb-3" controlId="formGridAddress2">
           <Form.Label>Address 2</Form.Label>
-          <Form.Control placeholder="Apartment, studio, or floor" />
+          <Form.Control placeholder="" />
         </Form.Group>
 
         <Row className="mb-3">

@@ -1,5 +1,11 @@
 import styled from "styled-components";
 
+export const sizes = {
+  sizes: {
+    primary: "w-72",
+    secundary: "w-2"
+  },
+}
 
 export const Container = styled.div`
   display: flex;
@@ -11,11 +17,15 @@ export const Container = styled.div`
   position: fixed;
   gap: 60px;
   border-right: 5px solid #00CED1;
+
+  :focus{
+    background: red;
+  }
   `
 export const active = styled.div`
   height: 100vh;
   background: red;
-  widht: 280px;
+  widht: 280px !important;
   align-items: center;
   padding: 10px;
   position: fixed;
