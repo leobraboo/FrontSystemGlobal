@@ -26,36 +26,31 @@ export function Fcliente() {
         </Form.Group>
 
         <Form.Group className="mb-3" controlId="formGridAddress2">
-          <Form.Label>Address 2</Form.Label>
+          <Form.Label>Bairro</Form.Label>
           <Form.Control placeholder="" />
         </Form.Group>
 
         <Row className="mb-3">
           <Form.Group as={Col} controlId="formGridCity">
-            <Form.Label>City</Form.Label>
+            <Form.Label>Cidade</Form.Label>
             <Form.Control />
           </Form.Group>
 
           <Form.Group as={Col} controlId="formGridState">
-            <Form.Label>State</Form.Label>
-            <Form.Select defaultValue="Choose...">
-              <option>Choose...</option>
+            <Form.Label>Estado</Form.Label>
+            <Form.Select defaultValue="Selecione...">
+              <option>Selecione...</option>
               <option>...</option>
             </Form.Select>
           </Form.Group>
 
           <Form.Group as={Col} controlId="formGridZip">
-            <Form.Label>Zip</Form.Label>
+            <Form.Label>CEP</Form.Label>
             <Form.Control />
           </Form.Group>
         </Row>
-
-        <Form.Group className="mb-3" id="formGridCheckbox">
-          <Form.Check type="checkbox" label="Check me out" />
-        </Form.Group>
-
-        <Button variant="primary" type="submit">
-          Submit
+        <Button variant="primary" type="button">
+          Cadastrar
         </Button>
       </Form>
     </ContentClient>

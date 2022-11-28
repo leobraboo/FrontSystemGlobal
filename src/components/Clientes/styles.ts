@@ -9,6 +9,4 @@ align-items: center;
 width: 80vw;
 margin-left: 100px;
 height: auto;
-background: red;
-
 `

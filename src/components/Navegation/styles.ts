@@ -57,14 +57,17 @@ export const IconButton = styled.div`
   color: white; 
   flex-direction: column;
   align-items: center;
+  text-decoration: none;
+  color: #00CED1;
 
   :hover{
-    color: #00CED1;
+    color: white;
   `
 export const ButtonStyle = styled.button`
   display: flex;
   flex-direction: row;
   height: 50px;
+  width: 180px;
   border: none;
   border-radius: 10px;
   background: #1C1C1C	; 

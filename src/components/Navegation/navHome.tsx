@@ -27,7 +27,7 @@ export function NavHome({ colapse }: NavHomeProps) {
     <Container className={` ${open ? "w-72" : "w-2"}`} onClick={() => setOpen(!open)}>
       <UserContainer>
         <IconButton as={Link} to="/">
-          <IoPersonCircleOutline size={70} /> ROOTS
+          <IoPersonCircleOutline size={70} /> BMS OPTICA
         </IconButton>
       </UserContainer>
       <Content>
