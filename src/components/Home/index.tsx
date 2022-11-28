@@ -13,12 +13,13 @@
 
 import { Chart as ChartJS, ArcElement, Tooltip, Legend } from 'chart.js';
 import { Doughnut } from 'react-chartjs-2';
-import { ContainerData } from './styles';
+import { AccordionGeneral } from './GeneralInfo';
+import { ContainerData1 , ContainerData2 , ContainerData3 , GeneralDv } from './styles';
 
 ChartJS.register(ArcElement, Tooltip, Legend);
 
 export const data = {
-  labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+  labels: ['Armações', 'Lentes', 'Contato', 'Sol', 'Outros', 'Saida'],
   datasets: [
     {
       label: '# of Votes',
@@ -45,7 +46,20 @@ export const data = {
 };
 
 export function Homegeneral() {
-  return <Doughnut style={{ width:"200px" , height:"200px" }} data={data} />;
+  return (
+    <>
+    <GeneralDv>
+      <ContainerData1 data={data}>
+      </ContainerData1>
+      <ContainerData2 data={data}>
+      </ContainerData2>
+      <ContainerData3 data={data}>
+      </ContainerData3>
+    </GeneralDv>
+    <AccordionGeneral/>
+
+    </>
+  )
 }
 // import {
 //   Chart as ChartJS,

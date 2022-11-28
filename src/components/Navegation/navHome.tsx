@@ -12,8 +12,7 @@ import { Link } from "react-router-dom";
 import {
   Container, Content, IconButton,
   ButtonStyle, TextButton, UserContainer,
-  Containeractive
-} from "./styles";
+  active} from "./styles";
 
 
 interface NavHomeProps {
@@ -24,13 +23,13 @@ export function NavHome({ colapse }: NavHomeProps) {
   const [open, setOpen] = useState(false);
   return (
 
-    <Container className={`${open ? "w-72" : "w-2"} duration-300`} onClick={() => setOpen(!open)}>
+    <Container className={`${open ? Container : active}`} onClick={() => setOpen(!open)}>
       <UserContainer>
         <IconButton as={Link} to="/">
           <IoPersonCircleOutline size={70} /> ROOTS
         </IconButton>
       </UserContainer>
-      <Content onClick={() => setOpen(!colapse)}>
+      <Content className={`${open ? "w-72" : "w-2"}`} onClick={() => setOpen(!open)}>
         <ButtonStyle as={Link} to="/Clients" >
           <IconButton> <IoPersonAdd size={25} /> </IconButton>
           {colapse ? (

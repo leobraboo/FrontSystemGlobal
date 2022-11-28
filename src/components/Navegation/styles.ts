@@ -4,7 +4,7 @@ import styled from "styled-components";
 export const Container = styled.div`
   display: flex;
   flex-direction: column;
-  height: 100vh; 
+  height: 100vh;
   background: #1C1C1C; 
   align-items: center;
   padding: 10px;
@@ -12,10 +12,10 @@ export const Container = styled.div`
   gap: 60px;
   border-right: 5px solid #00CED1;
   `
-export const Containeractive = styled.div`
+export const active = styled.div`
   height: 100vh;
-  width: 60px;
   background: red;
+  widht: 280px;
   align-items: center;
   padding: 10px;
   position: fixed;
@@ -26,7 +26,6 @@ export const Containeractive = styled.div`
 export const UserContainer = styled.div`
   display: flex;
   flex-direction: column;
-  width: 280px;
   height: 10vh;
   background: #1C1C1C; 
   align-items: center;
@@ -55,7 +54,6 @@ export const IconButton = styled.div`
 export const ButtonStyle = styled.button`
   display: flex;
   flex-direction: row;
-  width: 280px;
   height: 50px;
   border: none;
   border-radius: 10px;
