@@ -1,11 +1,12 @@
 import styled from "styled-components";
 
-export const sizes = {
-  sizes: {
-    primary: "w-72",
-    secundary: "w-2"
+export const tam = {
+  tamanho:{
+    widht: "widht: 50px",
+    widht2: "widht: 5px"
   },
 }
+
 
 export const Container = styled.div`
   display: flex;

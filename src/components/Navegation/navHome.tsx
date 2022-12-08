@@ -14,7 +14,7 @@ import {
   ButtonStyle, TextButton, UserContainer,
   active} from "./styles";
 
-import { sizes } from './styles';
+import { tam } from './styles';
 
 interface NavHomeProps {
   colapse: boolean;
@@ -23,8 +23,8 @@ interface NavHomeProps {
 export function NavHome({ colapse }: NavHomeProps) {
   const [open, setOpen] = useState(false);
   return (
-
-    <Container className={` ${open ? "w-72" : "w-2"}`} onClick={() => setOpen(!open)}>
+<div  >
+    <Container className={` ${open ? active : Container }`} onClick={() => setOpen(!open)}>
       <UserContainer>
         <IconButton as={Link} to="/">
           <IoPersonCircleOutline size={70} /> BMS OPTICA
@@ -121,5 +121,6 @@ export function NavHome({ colapse }: NavHomeProps) {
 
       </Content>
     </Container>
+    </div>
   )
 }
