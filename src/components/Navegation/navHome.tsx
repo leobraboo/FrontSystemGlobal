@@ -11,10 +11,8 @@ import { Link } from "react-router-dom";
 
 import {
   Container, Content, IconButton,
-  ButtonStyle, TextButton, UserContainer,
-  active} from "./styles";
+  ButtonStyle, TextButton, UserContainer} from "./styles";
 
-import { tam } from './styles';
 
 interface NavHomeProps {
   colapse: boolean;
@@ -24,14 +22,14 @@ export function NavHome({ colapse }: NavHomeProps) {
   const [open, setOpen] = useState(false);
   return (
 <div  >
-    <Container className={` ${open ? active : Container }`} onClick={() => setOpen(!open)}>
+    <Container style={{width: open ? "200px" : "50px"}} onClick={() => setOpen(!open)}>
       <UserContainer>
-        <IconButton as={Link} to="/">
+        <IconButton >
           <IoPersonCircleOutline size={70} /> BMS OPTICA
         </IconButton>
       </UserContainer>
       <Content>
-        <ButtonStyle as={Link} to="/Clients" >
+        <ButtonStyle style={{width: open ? "180px" : "10px"}} as={Link} to="/Clients" >
           <IconButton> <IoPersonAdd size={25} /> </IconButton>
           {colapse ? (
             <TextButton> Clientes </TextButton>
