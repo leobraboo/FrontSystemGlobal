@@ -8,7 +8,7 @@ export const Container = styled.div`
   align-items: center;
   padding: 10px;
   position: fixed;
-  gap: 60px;
+  gap: 40px;
   border-right: 5px solid #00CED1;
 
   :focus{
@@ -31,6 +31,7 @@ export const Content = styled.div`
 
 export const IconButton = styled.div`
   display: flex;
+  margin-left:10px;
   flex-direction: column;
   align-items: center;
   text-decoration: none;
@@ -41,11 +42,13 @@ export const IconButton = styled.div`
   `
 export const ButtonStyle = styled.button`
   display: flex;
-  height: 50px;
+  height: 45px;
   border-radius: 10px;
-  background: #1C1C1C	; 
+  background: #1C1C1C;
+  align-items:center;
+  flex-direction: row;
   text-decoration: none;
-  gap: 30px;
+  gap: 10px;
 
   :hover{
     background: #363636	;

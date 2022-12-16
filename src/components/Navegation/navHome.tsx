@@ -22,25 +22,23 @@ export function NavHome({ colapse }: NavHomeProps) {
   const [open, setOpen] = useState(false);
   return (
 <div  >
-    <Container style={{width: open ? "200px" : "50px"}} onClick={() => setOpen(!open)}>
+    <Container style={{width: open ? "200px" : "80px" , transition:"ease-in 500ms"}} onClick={() => setOpen(!open)}>
       <UserContainer>
         <IconButton >
-          <IoPersonCircleOutline size={70} /> BMS OPTICA
+          <IoPersonCircleOutline size={60} />
+          <h6 style={{display: open ? "block" : "none"}}>BMS OPTICA</h6>
         </IconButton>
       </UserContainer>
-      <Content>
-        <ButtonStyle style={{width: open ? "180px" : "10px"}} as={Link} to="/Clients" >
-          <IconButton> <IoPersonAdd size={25} /> </IconButton>
-          {colapse ? (
-            <TextButton> Clientes </TextButton>
-          ) : <></>
-          }
+      <Content style={{width: open ? "180px" : "50px" , transition:"ease-in 500ms"}}>
+        <ButtonStyle as={Link} to="/Clients" >
+          <IconButton> <IoPersonAdd size={22} /> </IconButton>
+            <TextButton style={{display: open ? "block" : "none"}}> Clientes </TextButton>
         </ButtonStyle>
 
         <ButtonStyle as={Link} to="/Products">
           <IconButton> <IoCartOutline size={25} /> </IconButton>
           {colapse ? (
-            <TextButton> Produtos </TextButton>
+            <TextButton style={{display: open ? "block" : "none" , transition:"ease-in 2s"}}> Produtos </TextButton>
           ) : <></>
           }
         </ButtonStyle>
@@ -48,7 +46,7 @@ export function NavHome({ colapse }: NavHomeProps) {
         <ButtonStyle as={Link} to="/Sales">
           <IconButton> <IoStorefrontOutline size={25} /> </IconButton>
           {colapse ? (
-            <TextButton> Vendas </TextButton>
+            <TextButton style={{display: open ? "block" : "none" , transition:"ease-in 2s"}}> Vendas </TextButton>
           ) : <></>
           }
         </ButtonStyle>
@@ -56,7 +54,7 @@ export function NavHome({ colapse }: NavHomeProps) {
         <ButtonStyle as={Link} to="/NoteFiscale">
           <IconButton> <IoReaderOutline size={25} /> </IconButton>
           {colapse ? (
-            <TextButton> Nota fiscal </TextButton>
+            <TextButton style={{display: open ? "block" : "none" , transition:"ease-in 2s"}}> Nota fiscal </TextButton>
           ) : <></>
           }
         </ButtonStyle>
@@ -64,7 +62,7 @@ export function NavHome({ colapse }: NavHomeProps) {
         <ButtonStyle as={Link} to="/Financial">
           <IconButton> <IoCashOutline size={25} /> </IconButton>
           {colapse ? (
-            <TextButton> Financeiro </TextButton>
+            <TextButton style={{display: open ? "block" : "none" , transition:"ease-in 2s"}}> Financeiro </TextButton>
           ) : <></>
           }
         </ButtonStyle>
@@ -72,7 +70,7 @@ export function NavHome({ colapse }: NavHomeProps) {
         <ButtonStyle as={Link} to="/Grafics">
           <IconButton> <IoStatsChartSharp size={25} /> </IconButton>
           {colapse ? (
-            <TextButton> Gráficos </TextButton>
+            <TextButton style={{display: open ? "block" : "none" , transition:"ease-in 2s"}}> Gráficos </TextButton>
           ) : <></>
           }
         </ButtonStyle>
@@ -80,7 +78,7 @@ export function NavHome({ colapse }: NavHomeProps) {
         <ButtonStyle as={Link} to="/Carrying">
           <IconButton> <TbTruck size={25} /> </IconButton>
           {colapse ? (
-            <TextButton> Transportadora </TextButton>
+            <TextButton style={{display: open ? "block" : "none" , transition:"ease-in 2s"}}> Transportadora </TextButton>
           ) : <></>
           }
         </ButtonStyle>
@@ -88,7 +86,7 @@ export function NavHome({ colapse }: NavHomeProps) {
         <ButtonStyle as={Link} to="/Reports">
           <IconButton> <IoDocumentTextOutline size={25} /> </IconButton>
           {colapse ? (
-            <TextButton> Relátorios </TextButton>
+            <TextButton style={{display: open ? "block" : "none" , transition:"ease-in 2s"}}> Relátorios </TextButton>
           ) : <></>
           }
         </ButtonStyle>
@@ -96,7 +94,7 @@ export function NavHome({ colapse }: NavHomeProps) {
         <ButtonStyle as={Link} to="/Configs">
           <IconButton> <IoSettingsOutline size={25} /> </IconButton>
           {colapse ? (
-            <TextButton> Configurações </TextButton>
+            <TextButton style={{display: open ? "block" : "none" , transition:"ease-in 2s"}}> Configurações </TextButton>
           ) : <></>
           }
         </ButtonStyle>
@@ -104,7 +102,7 @@ export function NavHome({ colapse }: NavHomeProps) {
         <ButtonStyle as={Link} to="/Clients">
           <IconButton> <IoHeadset size={25} /> </IconButton>
           {colapse ? (
-            <TextButton> Suporte </TextButton>
+            <TextButton style={{display: open ? "block" : "none" , transition:"ease-in 2s"}}> Suporte </TextButton>
           ) : <></>
           }
         </ButtonStyle>
@@ -112,7 +110,7 @@ export function NavHome({ colapse }: NavHomeProps) {
         <ButtonStyle as={Link} to="/Clients">
           <IconButton> <IoLogOutOutline size={25} /> </IconButton>
           {colapse ? (
-            <TextButton> sair </TextButton>
+            <TextButton style={{display: open ? "block" : "none" , transition:"ease-in 2s"}}> sair </TextButton>
           ) : <></>
           }
         </ButtonStyle>
