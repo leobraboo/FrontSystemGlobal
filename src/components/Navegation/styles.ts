@@ -35,7 +35,7 @@ export const IconButton = styled.div`
   flex-direction: column;
   align-items: center;
   text-decoration: none;
-  color: #00CED1;
+  color: #00FFFF;
 
   :hover{
     color: white;
@@ -61,7 +61,7 @@ align-items: center;
 color: #F0F8FF;
 
 :hover{
-  color: #00CED1;
+  color: #00FFFF;
 }
 `
 
