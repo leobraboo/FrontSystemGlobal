@@ -1,4 +1,5 @@
-import { Button, Col, Row, Card, Form, Tabs, Tab , Stack } from 'react-bootstrap';
+import { Button, Card, Form, Tabs, Tab , Stack } from 'react-bootstrap';
+import { DiagnosisClient } from './DiagnosisClient';
 import { RegisterClient } from './RegisterClient';
 import { ContentClient } from './styles';
 
@@ -15,7 +16,7 @@ export function Fcliente() {
               <RegisterClient />
             </Tab>
             <Tab eventKey="diagnosis" title="Diagnostico">
-              <RegisterClient />
+              <DiagnosisClient />
             </Tab>
             <Tab eventKey="search" title="Pesquisar">
               <Stack direction="horizontal" gap={3}>
