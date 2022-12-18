@@ -6,7 +6,7 @@ align-content: center;
 display: flex;
 justify-content: center;
 align-items: center;
-width: 80vw;
+width: 90vw;
 margin-left: 100px;
 height: auto;
 `
