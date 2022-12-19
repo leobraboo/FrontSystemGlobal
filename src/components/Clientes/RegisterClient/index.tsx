@@ -20,18 +20,28 @@ export function RegisterClient(){
       <Form.Control placeholder="" />
     </Form.Group>
 
-    <Form.Group className="mb-3" controlId="formGridAddress2">
+    <Form.Group className="mb-3">
+      <Form.Label>Numero</Form.Label>
+      <Form.Control placeholder="" />
+    </Form.Group>
+
+    <Form.Group className="mb-3">
+      <Form.Label>Complemento</Form.Label>
+      <Form.Control placeholder="" />
+    </Form.Group>
+
+    <Form.Group className="mb-3">
       <Form.Label>Bairro</Form.Label>
       <Form.Control placeholder="" />
     </Form.Group>
 
     <Row className="mb-3">
-      <Form.Group as={Col} controlId="formGridCity">
+      <Form.Group as={Col}>
         <Form.Label>Cidade</Form.Label>
         <Form.Control />
       </Form.Group>
 
-      <Form.Group as={Col} controlId="formGridState">
+      <Form.Group as={Col}>
         <Form.Label>Estado</Form.Label>
         <Form.Select defaultValue="Selecione...">
           <option>Selecione...</option>
@@ -39,11 +49,26 @@ export function RegisterClient(){
         </Form.Select>
       </Form.Group>
 
-      <Form.Group as={Col} controlId="formGridZip">
+      <Form.Group as={Col}>
         <Form.Label>CEP</Form.Label>
         <Form.Control />
       </Form.Group>
     </Row>
+
+    <Form.Group className="mb-3">
+      <Form.Label>Telefone</Form.Label>
+      <Form.Control placeholder="" />
+    </Form.Group>
+
+    <Form.Group className="mb-3">
+      <Form.Label>Celular</Form.Label>
+      <Form.Control placeholder="" />
+    </Form.Group>
+
+    <Form.Group className="mb-3">
+      <Form.Label>Email</Form.Label>
+      <Form.Control placeholder="" />
+    </Form.Group>
     <Button variant="primary" type="button">
       Cadastrar
     </Button>

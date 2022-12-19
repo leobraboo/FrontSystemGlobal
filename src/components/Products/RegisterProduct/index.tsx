@@ -5,45 +5,52 @@ export function RegisterProduct(){
     <Form>
     <Row className="mb-3">
       <Form.Group as={Col} controlId="formGridEmail">
-        <Form.Label>produto</Form.Label>
+        <Form.Label>Nome</Form.Label>
         <Form.Control type="text" placeholder="" />
       </Form.Group>
 
       <Form.Group as={Col} controlId="formGridPassword">
-        <Form.Label>CPF/CNPJ</Form.Label>
+        <Form.Label>Valor</Form.Label>
         <Form.Control type="text" placeholder="" />
       </Form.Group>
     </Row>
 
     <Form.Group className="mb-3" controlId="formGridAddress1">
-      <Form.Label>Endereço</Form.Label>
+      <Form.Label>Valor de Venda</Form.Label>
       <Form.Control placeholder="" />
     </Form.Group>
 
     <Form.Group className="mb-3" controlId="formGridAddress2">
-      <Form.Label>Bairro</Form.Label>
+      <Form.Label>Unidade</Form.Label>
       <Form.Control placeholder="" />
     </Form.Group>
 
     <Row className="mb-3">
       <Form.Group as={Col} controlId="formGridCity">
-        <Form.Label>Cidade</Form.Label>
+        <Form.Label>Descrição</Form.Label>
         <Form.Control />
-      </Form.Group>
-
-      <Form.Group as={Col} controlId="formGridState">
-        <Form.Label>Estado</Form.Label>
-        <Form.Select defaultValue="Selecione...">
-          <option>Selecione...</option>
-          <option>...</option>
-        </Form.Select>
       </Form.Group>
 
       <Form.Group as={Col} controlId="formGridZip">
-        <Form.Label>CEP</Form.Label>
+        <Form.Label>Código de Barras</Form.Label>
         <Form.Control />
       </Form.Group>
     </Row>
+
+    <Form.Group className="mb-3" controlId="formGridAddress2">
+      <Form.Label>Código Referência</Form.Label>
+      <Form.Control placeholder="" />
+    </Form.Group>
+
+    <Form.Group className="mb-3" controlId="formGridAddress2">
+      <Form.Label>Estoque</Form.Label>
+      <Form.Control placeholder="" />
+    </Form.Group>
+
+    <Form.Group className="mb-3" controlId="formGridAddress2">
+      <Form.Label>Estoque Minímo</Form.Label>
+      <Form.Control placeholder="" />
+    </Form.Group>
     <Button variant="primary" type="button">
       Cadastrar
     </Button>
