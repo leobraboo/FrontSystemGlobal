@@ -1,4 +1,4 @@
-export const INITIAL_STATE_CLIENTE = {
+export const INITIAL_CLIENTE = {
   id: "",
   nome: "",
   cpfCnpj: "",

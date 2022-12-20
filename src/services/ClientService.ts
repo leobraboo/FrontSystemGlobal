@@ -1,12 +1,12 @@
 import { api } from '../utils/GlobalConfigs/api';
-import { ICliente } from '../interface/Iclient';
-class ClienteService {
-  async save(dataCliente: ICliente) {
+import { IClient } from '../interface/IClient';
+class ClientService {
+  async save(dataCliente: IClient) {
     const { data } = await api.post('/customers', dataCliente)
     return data
   }
 
-  async update(dataCliente: ICliente) {
+  async update(dataCliente: IClient) {
     await api.put(`/customers/${dataCliente.id}`, dataCliente)
   }
 
@@ -20,4 +20,4 @@ class ClienteService {
   }
 }
 
-export default new ClienteService()
+export default new ClientService()

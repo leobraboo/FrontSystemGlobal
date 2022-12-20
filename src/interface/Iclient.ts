@@ -1,5 +1,5 @@
-export interface ICliente {
-    id: string
+export interface IClient {
+    id?: string
     nome: string
     cpfCnpj: string
     endereco: string
