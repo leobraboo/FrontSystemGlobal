@@ -5,7 +5,7 @@ import { ContentProduct } from './styles';
 export function FProducts() {
   return (
     <ContentProduct>
-      <Card style={{ marginTop: "50px", width: "80%" }}>
+      <Card style={{ marginTop: "50px", width: "80%", height: "80vh" }}>
         <Card.Body>
           <Tabs
             defaultActiveKey="register"
