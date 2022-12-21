@@ -6,15 +6,14 @@ align-items: center;
 align-content: center;
 justify-items: center ;
 flex-direction: column;
-margin-left: 270px;
-margin-top: 50px;
+margin-left: 250px;
 .accordion-button:focus{
     box-shadow: none;
 }
 
 .accordion-button:not(.collapsed){
-    background-color: #1b022e;
-    color: var(--bs-accordion-bg);  
+    background-color: white;
+    color: black;  
 }
 
 .accordion-button::after {

@@ -7,6 +7,7 @@ align-content: center;
 justify-content: center;
 justify-items: center;
 display: flex;
+margin-left: 100px;
 flex-direction: row;
 max-height: 100vh;
 max-width: 100vw;
@@ -20,7 +21,7 @@ export const ContainerData1 = styled(Doughnut)`
   background: white;
   border-radius: 10px;
   align-items: center;
-  margin-top: 10px;
+  margin-top: 100px;
   align-content: center;
   justify-content: center !important;
   `
@@ -32,7 +33,7 @@ export const ContainerData1 = styled(Doughnut)`
   max-width: 20vw;
   border-radius: 10px;
   align-items: center;
-  margin-top: 10px;
+  margin-top: 100px;
   background: white;
   align-content: center;
   justify-content: center !important;
@@ -45,7 +46,7 @@ export const ContainerData1 = styled(Doughnut)`
   background: white;
   border-radius: 10px;
   align-items: center;
-  margin-top: 10px;
+  margin-top: 100px;
   align-content: center;
   justify-content: center !important;
   `
