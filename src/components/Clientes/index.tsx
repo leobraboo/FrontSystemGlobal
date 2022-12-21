@@ -3,10 +3,10 @@ import { DiagnosisClient } from './DiagnosisClient';
 import { RegisterClient } from './RegisterClient';
 import { ContentClient } from './styles';
 
-export function Fcliente() {
+export function CClient() {
   return (
     <ContentClient>
-      <Card style={{ marginTop: "50px", width: "80%", height: "80vh" }}>
+      <Card style={{ marginTop: "50px", width: "80%", height: "auto" }}>
         <Card.Body>
           <Tabs
             defaultActiveKey="register"

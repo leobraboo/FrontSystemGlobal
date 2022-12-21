@@ -2,7 +2,7 @@ import { Button, Card, Form, Tabs, Tab , Stack } from 'react-bootstrap';
 import { RegisterProduct } from './RegisterProduct';
 import { ContentProduct } from './styles';
 
-export function FProducts() {
+export function CProducts() {
   return (
     <ContentProduct>
       <Card style={{ marginTop: "50px", width: "80%", height: "80vh" }}>

@@ -1,10 +1,10 @@
-import { Fcliente } from '../../components/Clientes'
+import { CClient } from '../../components/Clientes'
 
 
 export function Clients(){
   return (
       <>
-      <Fcliente/>
+      <CClient/>
       </>
   )  
 }

@@ -49,7 +49,7 @@ export function RegisterProduct() {
 
       <Form.Group className='mb-3'>
         <Form.Label>Descrição</Form.Label>
-        <Form.Control />
+        <Form.Control as="textarea" style={{ height:"100px" }} />
       </Form.Group>
       <Button variant="primary" type="button">
         Cadastrar

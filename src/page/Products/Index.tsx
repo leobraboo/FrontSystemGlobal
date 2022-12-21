@@ -1,9 +1,9 @@
-import { FProducts } from "../../components/Products";
+import { CProducts } from "../../components/Products";
 
 export function Products(){
   return (
       <>
-      <FProducts/>
+      <CProducts/>
       </>
   )  
 }
