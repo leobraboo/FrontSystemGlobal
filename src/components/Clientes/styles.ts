@@ -7,6 +7,6 @@ display: flex;
 justify-content: center;
 align-items: center;
 width: 90vw;
-margin-left: 100px;
+margin-left: 120px;
 height: auto;
 `

@@ -1,5 +1,5 @@
 import {
-  IoPersonCircleOutline, IoPersonAdd,
+  IoChevronForward, IoPersonAdd,
   IoStorefrontOutline, IoReaderOutline, IoStatsChartSharp,
   IoSettingsOutline, IoCartOutline, IoCashOutline,
   IoDocumentTextOutline, IoHeadset, IoLogOutOutline
@@ -23,14 +23,13 @@ export function NavHome({ colapse }: NavHomeProps) {
   const [open, setOpen] = useState(false);
   return (
     <div  >
-      <Container style={{ width: open ? "200px" : "80px", transition: "ease-in 500ms" }} onClick={() => setOpen(!open)}>
+      <Container>
         <UserContainer>
-          <IconButton >
-            <IoPersonCircleOutline size={60} />
-            <h6 style={{ display: open ? "block" : "none" }}>BMS OPTICA</h6>
+          <IconButton style={{ width: open ? "180px" : "30px", transition: "ease-in 500ms" }} onClick={() => setOpen(!open)} >
+            <IoChevronForward size={30} />
           </IconButton>
         </UserContainer>
-        <Content style={{ width: open ? "180px" : "50px", transition: "ease-in 500ms" }}>
+        <Content style={{ width: open ? "180px" : "40px", transition: "ease-in 500ms" }}>
           <ButtonStyle as={Link} to="/Clients" >
             <IconButton> <IoPersonAdd size={22} /> </IconButton>
             <TextButton style={{ display: open ? "block" : "none" }}> Clientes </TextButton>

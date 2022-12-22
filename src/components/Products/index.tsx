@@ -5,7 +5,7 @@ import { ContentProduct } from './styles';
 export function CProducts() {
   return (
     <ContentProduct>
-      <Card style={{ marginTop: "50px", width: "80%", height: "80vh" }}>
+      <Card style={{ marginTop: "90px", width: "80%", height: "80vh" }}>
         <Card.Body>
           <Tabs
             defaultActiveKey="register"

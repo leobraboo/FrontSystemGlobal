@@ -1,3 +1,4 @@
+import { Stack } from "react-bootstrap";
 import styled from "styled-components";
 
 export const Container = styled.div`
@@ -8,7 +9,6 @@ export const Container = styled.div`
   align-items: center;
   padding: 10px;
   position: fixed;
-  gap: 40px;
   border-right: 5px solid #00CED1;
 
   :focus{
@@ -18,9 +18,11 @@ export const Container = styled.div`
 
 export const UserContainer = styled.div`
   display: flex;
-  flex-direction: column;
   height: 10vh;
-  background: #1C1C1C; 
+  flex-direction: row;
+  justify-content: flex-end;
+  background: #1C1C1C;
+  width: 100%;
   `
 
 export const Content = styled.div`
@@ -31,9 +33,9 @@ export const Content = styled.div`
 
 export const IconButton = styled.div`
   display: flex;
-  margin-left:10px;
+  margin-left: 5px;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-end;
   text-decoration: none;
   color: #00FFFF;
 
@@ -60,6 +62,33 @@ font-size: 1rem;
 align-items: center;
 color: #F0F8FF;
 
+:hover{
+  color: #00FFFF;
+}
+`
+export const NavContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 60px;
+  background: #1C1C1C; 
+  align-items: center;
+  padding: 10px;
+  position: fixed;
+  gap: 40px;
+  justify-content: flex-end;
+  border-bottom: 5px solid #00CED1;
+
+  :focus{
+    background: red;
+  }
+`
+
+export const CSearch = styled(Stack)`
+display: flex;
+flex-direction: row;
+flew-wrap: wrap;
+align-items: center;
 :hover{
   color: #00FFFF;
 }
