@@ -90,7 +90,7 @@ export const NavContainer = styled.div`
   flex-direction: row;
   width: 100%;
   height: 60px;
-  background: #1C1C1C; 
+  background: #0c0b0d; 
   align-items: center;
   padding: 10px;
   position: fixed;
