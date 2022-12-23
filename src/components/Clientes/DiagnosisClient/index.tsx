@@ -21,29 +21,29 @@ export function DiagnosisClient() {
                   <Row>
                     <Form.Group as={Col}>
                       <Form.Label style={{ fontSize: "12px" }}> Esférico </Form.Label>
-                      <Form.Control style={{ height:"30px" }}/>
+                      <Form.Control style={{ height: "30px" }} />
                     </Form.Group>
                     <Form.Group as={Col}>
                       <Form.Label style={{ fontSize: "12px" }}> Cilindrico </Form.Label>
-                      <Form.Control style={{ height:"30px" }} />
+                      <Form.Control style={{ height: "30px" }} />
                     </Form.Group>
                     <Form.Group as={Col}>
                       <Form.Label style={{ fontSize: "12px" }}> Eixo </Form.Label>
-                      <Form.Control style={{ height:"30px" }} />
+                      <Form.Control style={{ height: "30px" }} />
                     </Form.Group>
                   </Row>
                   <Row>
                     <Form.Group as={Col}>
                       <Form.Label style={{ fontSize: "12px" }}> Adição </Form.Label>
-                      <Form.Control style={{ height:"30px" }} />
+                      <Form.Control style={{ height: "30px" }} />
                     </Form.Group>
                     <Form.Group as={Col}>
                       <Form.Label style={{ fontSize: "12px" }}> DNP </Form.Label>
-                      <Form.Control style={{ height:"30px" }} />
+                      <Form.Control style={{ height: "30px" }} />
                     </Form.Group>
                     <Form.Group as={Col}>
-                      <Form.Label style={{ fontSize: "12px" }}> ACO </Form.Label>
-                      <Form.Control style={{ height:"30px" }} />
+                      <Form.Label style={{ fontSize: "12px" }}> ALTURA </Form.Label>
+                      <Form.Control style={{ height: "30px" }} />
                     </Form.Group>
                   </Row>
                 </Form>
@@ -56,29 +56,29 @@ export function DiagnosisClient() {
                   <Row>
                     <Form.Group as={Col}>
                       <Form.Label style={{ fontSize: "12px" }}> Esférico </Form.Label>
-                      <Form.Control style={{ height:"30px" }} />
+                      <Form.Control style={{ height: "30px" }} />
                     </Form.Group>
                     <Form.Group as={Col}>
                       <Form.Label style={{ fontSize: "12px" }}> Cilindrico </Form.Label>
-                      <Form.Control style={{ height:"30px" }} />
+                      <Form.Control style={{ height: "30px" }} />
                     </Form.Group>
                     <Form.Group as={Col}>
                       <Form.Label style={{ fontSize: "12px" }}> Eixo </Form.Label>
-                      <Form.Control style={{ height:"30px" }} />
+                      <Form.Control style={{ height: "30px" }} />
                     </Form.Group>
                   </Row>
                   <Row>
                     <Form.Group as={Col}>
                       <Form.Label style={{ fontSize: "12px" }}> Adição </Form.Label>
-                      <Form.Control style={{ height:"30px" }} />
+                      <Form.Control style={{ height: "30px" }} />
                     </Form.Group>
                     <Form.Group as={Col}>
                       <Form.Label style={{ fontSize: "12px" }}> DNP </Form.Label>
-                      <Form.Control style={{ height:"30px" }} />
+                      <Form.Control style={{ height: "30px" }} />
                     </Form.Group>
                     <Form.Group as={Col}>
-                      <Form.Label style={{ fontSize: "12px" }}> ACO </Form.Label>
-                      <Form.Control style={{ height:"30px" }} />
+                      <Form.Label style={{ fontSize: "12px" }}> ALTURA </Form.Label>
+                      <Form.Control style={{ height: "30px" }} />
                     </Form.Group>
                   </Row>
                 </Form>
@@ -96,29 +96,29 @@ export function DiagnosisClient() {
                   <Row>
                     <Form.Group as={Col}>
                       <Form.Label style={{ fontSize: "12px" }}> Esférico </Form.Label>
-                      <Form.Control style={{ height:"30px" }} />
+                      <Form.Control style={{ height: "30px" }} />
                     </Form.Group>
                     <Form.Group as={Col}>
                       <Form.Label style={{ fontSize: "12px" }}> Cilindrico </Form.Label>
-                      <Form.Control style={{ height:"30px" }} />
+                      <Form.Control style={{ height: "30px" }} />
                     </Form.Group>
                     <Form.Group as={Col}>
                       <Form.Label style={{ fontSize: "12px" }}> Eixo </Form.Label>
-                      <Form.Control style={{ height:"30px" }} />
+                      <Form.Control style={{ height: "30px" }} />
                     </Form.Group>
                   </Row>
                   <Row>
                     <Form.Group as={Col}>
                       <Form.Label style={{ fontSize: "12px" }}> Adição </Form.Label>
-                      <Form.Control style={{ height:"30px" }} />
+                      <Form.Control style={{ height: "30px" }} />
                     </Form.Group>
                     <Form.Group as={Col}>
                       <Form.Label style={{ fontSize: "12px" }}> DNP </Form.Label>
-                      <Form.Control style={{ height:"30px" }} />
+                      <Form.Control style={{ height: "30px" }} />
                     </Form.Group>
                     <Form.Group as={Col}>
-                      <Form.Label style={{ fontSize: "12px" }}> ACO </Form.Label>
-                      <Form.Control style={{ height:"30px" }} />
+                      <Form.Label style={{ fontSize: "12px" }}> ALTURA </Form.Label>
+                      <Form.Control style={{ height: "30px" }} />
                     </Form.Group>
                   </Row>
                 </Form>
@@ -131,29 +131,29 @@ export function DiagnosisClient() {
                   <Row>
                     <Form.Group as={Col}>
                       <Form.Label style={{ fontSize: "12px" }}> Esférico </Form.Label>
-                      <Form.Control style={{ height:"30px" }}  />
+                      <Form.Control style={{ height: "30px" }} />
                     </Form.Group>
                     <Form.Group as={Col}>
                       <Form.Label style={{ fontSize: "12px" }}> Cilindrico </Form.Label>
-                      <Form.Control style={{ height:"30px" }}  />
+                      <Form.Control style={{ height: "30px" }} />
                     </Form.Group>
                     <Form.Group as={Col}>
                       <Form.Label style={{ fontSize: "12px" }}> Eixo </Form.Label>
-                      <Form.Control style={{ height:"30px" }}  />
+                      <Form.Control style={{ height: "30px" }} />
                     </Form.Group>
                   </Row>
                   <Row>
                     <Form.Group as={Col}>
                       <Form.Label style={{ fontSize: "12px" }}> Adição </Form.Label>
-                      <Form.Control style={{ height:"30px" }} />
+                      <Form.Control style={{ height: "30px" }} />
                     </Form.Group>
                     <Form.Group as={Col}>
                       <Form.Label style={{ fontSize: "12px" }}> DNP </Form.Label>
-                      <Form.Control style={{ height:"30px" }} />
+                      <Form.Control style={{ height: "30px" }} />
                     </Form.Group>
                     <Form.Group as={Col}>
-                      <Form.Label style={{ fontSize: "12px" }}> ACO </Form.Label>
-                      <Form.Control style={{ height:"30px" }} />
+                      <Form.Label style={{ fontSize: "12px" }}> ALTURA </Form.Label>
+                      <Form.Control style={{ height: "30px" }} />
                     </Form.Group>
                   </Row>
                 </Form>
@@ -162,6 +162,48 @@ export function DiagnosisClient() {
           </Accordion.Body>
         </Accordion.Item>
       </DiagAccordion>
+      <Card style={{ width: '100%' , marginBottom:"10px" }}>
+        <Card.Body>
+          <Form>
+            <Form.Group>
+              <Form.Label style={{ fontSize: "12px" }}> Lentes </Form.Label>
+              <Form.Control style={{ height: "30px" }} />
+            </Form.Group>
+            <Form.Group>
+              <Form.Label style={{ fontSize: "12px" }}> Armação </Form.Label>
+              <Form.Control style={{ height: "30px" }} />
+            </Form.Group>
+            <Row>
+              <Form.Group as={Col}>
+                <Form.Label style={{ fontSize: "12px" }}> Lentes </Form.Label>
+                <Form.Control style={{ height: "30px" }} />
+              </Form.Group>
+              <Form.Group as={Col}>
+                <Form.Label style={{ fontSize: "12px" }}> Armação </Form.Label>
+                <Form.Control style={{ height: "30px" }} />
+              </Form.Group>
+              <Form.Group as={Col}>
+                <Form.Label style={{ fontSize: "12px" }}> Distancia Pupilar </Form.Label>
+                <Form.Control style={{ height: "30px" }} />
+              </Form.Group>
+            </Row>
+            <Row>
+              <Form.Group as={Col}>
+                <Form.Label style={{ fontSize: "12px" }}> MD </Form.Label>
+                <Form.Control style={{ height: "30px" }} />
+              </Form.Group>
+              <Form.Group as={Col}>
+                <Form.Label style={{ fontSize: "12px" }}> MV </Form.Label>
+                <Form.Control style={{ height: "30px" }} />
+              </Form.Group>
+              <Form.Group as={Col}>
+                <Form.Label style={{ fontSize: "12px" }}> Ponte </Form.Label>
+                <Form.Control style={{ height: "30px" }} />
+              </Form.Group>
+            </Row>
+          </Form>
+        </Card.Body>
+      </Card>
       <ContentButton>
         <Button size="sm" variant="primary">
           Limpar
