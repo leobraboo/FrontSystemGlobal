@@ -1,11 +1,13 @@
 import { Stack , Form } from "react-bootstrap";
 import styled from "styled-components";
+import fundobar from '../../../public/assets/laele.jpg'
 
 export const Container = styled.div`
   display: flex;
   flex-direction: column;
   height: 100vh;
-  background: #1C1C1C; 
+  background-image: url(${fundobar}) ;
+  background-size: cover;
   align-items: center;
   padding: 10px;
   position: fixed;
@@ -21,14 +23,14 @@ export const UserContainer = styled.div`
   height: 10vh;
   flex-direction: row;
   justify-content: flex-end;
-  background: #1C1C1C;
+  // background: #1C1C1C;
   width: 100%;
   `
 
 export const Content = styled.div`
   display: flex;
   flex-direction: column;
-  background: #1C1C1C; 
+  // background: #1C1C1C; 
   `
 
 export const IconButton = styled.div`
@@ -46,7 +48,7 @@ export const ButtonStyle = styled.button`
   display: flex;
   height: 45px;
   border-radius: 10px;
-  background: #1C1C1C;
+  // background: #1C1C1C;
   align-items:center;
   flex-direction: row;
   text-decoration: none;

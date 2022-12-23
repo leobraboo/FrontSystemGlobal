@@ -41,7 +41,7 @@ export function NavHome({ colapse }: NavHomeProps) {
             <TextButton style={{ display: open ? "block" : "none" }}> Produtos </TextButton>
           </ButtonStyle>
 
-          <FormStyle>
+          {/* <FormStyle>
             <IoStorefrontOutline size={30} />
             <Form.Select style={{ background: "#1C1C1C", border: "none", color: "white" }}>
               <option>
@@ -53,7 +53,7 @@ export function NavHome({ colapse }: NavHomeProps) {
                 </ButtonStyle>
               </option>
             </Form.Select>
-          </FormStyle>
+          </FormStyle> */}
 
           <ButtonStyle as={Link} to="/Sales">
             <IconButton> <IoStorefrontOutline size={25} /> </IconButton>
