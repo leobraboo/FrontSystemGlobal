@@ -6,73 +6,81 @@ export function DiagnosisClient() {
     <div>
       <DiagAccordion defaultActiveKey="0">
         <Accordion.Item eventKey="0">
-          <Accordion.Header>Clientes cadastrados</Accordion.Header>
-          <Accordion.Body>
-            <Form>
-              <Row className="mb-3">
-                <Form.Group>
-                  <Form.Label>Nome</Form.Label>
-                  <Form.Control />
-                </Form.Group>
-                <Form.Group>
-                  <Form.Label>CPF/CNPJ</Form.Label>
-                  <Form.Control />
-                </Form.Group>
-              </Row>
-              <Form.Group>
-                <Form.Label>Endereço</Form.Label>
-                <Form.Control />
-              </Form.Group>
-              <Form.Group>
-                <Form.Label>Bairro</Form.Label>
-                <Form.Control />
-              </Form.Group>
-              <Row>
-                <Form.Group as={Col}>
-                  <Form.Label>Cidade</Form.Label>
-                  <Form.Control />
-                </Form.Group>
-                <Form.Group as={Col}>
-                  <Form.Label>CEP</Form.Label>
-                  <Form.Control />
-                </Form.Group>
-              </Row>
-            </Form>
+          <Accordion.Header>Diagnostico Perto</Accordion.Header>
+          <Accordion.Body style={{ display: "flex", flexDirection: "row", justifyContent: "space-between" }}>
+            <Card style={{ width: '18rem' }}>
+              <Card.Body>
+                <Card.Title>Diagnostico Perto</Card.Title>
+                <Form>
+                  <Row>
+                    <Form.Group as={Col}>
+                      <Form.Label>Olho direito</Form.Label>
+                      <Form.Control />
+                    </Form.Group>
+                    <Form.Group as={Col}>
+                      <Form.Label>Olho esquerdo</Form.Label>
+                      <Form.Control />
+                    </Form.Group>
+                  </Row>
+                </Form>
+              </Card.Body>
+            </Card>
+            <Card style={{ width: '18rem' }}>
+              <Card.Body>
+                <Card.Title>Diagnostico Longe</Card.Title>
+                <Form>
+                  <Row>
+                    <Form.Group as={Col}>
+                      <Form.Label>Olho direito</Form.Label>
+                      <Form.Control />
+                    </Form.Group>
+                    <Form.Group as={Col}>
+                      <Form.Label>Olho esquerdo</Form.Label>
+                      <Form.Control />
+                    </Form.Group>
+                  </Row>
+                </Form>
+              </Card.Body>
+            </Card>
           </Accordion.Body>
         </Accordion.Item>
         <Accordion.Item eventKey="1">
-          <Accordion.Header>Produtos Cadastrados</Accordion.Header>
-          <Accordion.Body>
-            <Form>
-              <Row className="mb-3">
-                <Form.Group>
-                  <Form.Label>Nome</Form.Label>
-                  <Form.Control />
-                </Form.Group>
-                <Form.Group>
-                  <Form.Label>CPF/CNPJ</Form.Label>
-                  <Form.Control />
-                </Form.Group>
-              </Row>
-              <Form.Group>
-                <Form.Label>Endereço</Form.Label>
-                <Form.Control />
-              </Form.Group>
-              <Form.Group>
-                <Form.Label>Bairro</Form.Label>
-                <Form.Control />
-              </Form.Group>
-              <Row>
-                <Form.Group as={Col}>
-                  <Form.Label>Cidade</Form.Label>
-                  <Form.Control />
-                </Form.Group>
-                <Form.Group as={Col}>
-                  <Form.Label>CEP</Form.Label>
-                  <Form.Control />
-                </Form.Group>
-              </Row>
-            </Form>
+          <Accordion.Header>Diagnostico Longe</Accordion.Header>
+          <Accordion.Body style={{ display: "flex", flexDirection: "row", justifyContent: "space-between" }}>
+            <Card style={{ width: '18rem' }}>
+              <Card.Body>
+                <Card.Title>Diagnostico Perto</Card.Title>
+                <Form>
+                  <Row>
+                    <Form.Group as={Col}>
+                      <Form.Label>Olho direito</Form.Label>
+                      <Form.Control />
+                    </Form.Group>
+                    <Form.Group as={Col}>
+                      <Form.Label>Olho esquerdo</Form.Label>
+                      <Form.Control />
+                    </Form.Group>
+                  </Row>
+                </Form>
+              </Card.Body>
+            </Card>
+            <Card style={{ width: '18rem' }}>
+              <Card.Body>
+                <Card.Title>Diagnostico Longe</Card.Title>
+                <Form>
+                  <Row>
+                    <Form.Group as={Col}>
+                      <Form.Label>Olho direito</Form.Label>
+                      <Form.Control />
+                    </Form.Group>
+                    <Form.Group as={Col}>
+                      <Form.Label>Olho esquerdo</Form.Label>
+                      <Form.Control />
+                    </Form.Group>
+                  </Row>
+                </Form>
+              </Card.Body>
+            </Card>
           </Accordion.Body>
         </Accordion.Item>
       </DiagAccordion>

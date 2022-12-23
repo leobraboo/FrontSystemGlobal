@@ -43,7 +43,6 @@ export function Homegeneral() {
         <ContainerData3 data={data}>
         </ContainerData3>
       </GeneralDv>
-
     </>
   )
 }
