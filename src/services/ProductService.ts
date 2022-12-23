@@ -19,6 +19,11 @@ class ProductServices {
         const { data } = await api.get(`/products/${id}`)
         return data
     }
+
+    async getFromSelectBox() {
+        const { data } = await api.get('/products')
+        return data
+    }
 }
 
 export default new ProductServices()

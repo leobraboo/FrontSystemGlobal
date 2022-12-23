@@ -18,6 +18,11 @@ class ClientService {
     const { data } = await api.get(`/customers/${id}`)
     return data
   }
+
+  async getFromSelectBox() {
+    const { data } = await api.get('/customers/combobox')
+    return data
+  }
 }
 
 export default new ClientService()

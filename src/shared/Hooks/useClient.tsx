@@ -3,10 +3,10 @@ import { useState, useCallback, useContext } from 'react';
 import { INITIAL_CLIENTE } from '../StatesInitials/Client';
 import ClientService from '../../services/ClientService';
 import { IClient } from '../../interface/IClient';
-import { Toast } from 'react-bootstrap';
+import { GlobalContext } from '../Context/globalContext';
 
 export function UseClient() {
-  const [client, setClient] = useState<IClient | IClient[]>(INITIAL_CLIENTE);
+  const { client, setClient, getClientesFromSelectBox } = useContext(GlobalContext) as { client: IClient, setClient: (value: IClient) => void, getClientesFromSelectBox: () => void }
 
   const handleChange = useCallback((e: React.ChangeEvent<HTMLInputElement & HTMLSelectElement>) => {
     setClient({ ...client, [e.target.name]: e.target.value })
@@ -21,9 +21,9 @@ export function UseClient() {
     }
   }
 
-  // const handleSaveOrUpdate = async () => {
-  //   client?.id === "" ? save() : "teste"
-  // }
+  const handleSaveOrUpdate = async () => {
+    client?.id === "" ? save() : "teste"
+  }
   return {
     handleChange
   }

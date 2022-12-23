@@ -94,7 +94,6 @@ export function CConfigs() {
           </nav>
         </div>
         <div id="layoutSidenav_content">
-
         </div>
       </div>
     </>
