@@ -6,8 +6,8 @@ export function NavBar() {
     <>
       <NavContainer>
         <CSearch direction="horizontal" gap={3}>
-          <Form.Control className="me-auto" placeholder="Pesquisar" />
-          <Button variant="secondary">Pesquisar</Button>
+          <Form.Control className="me-auto" style={{ height:"30px" }} />
+          <Button size="sm" variant="secondary">Pesquisar</Button>
         </CSearch>
       </NavContainer>
     </>

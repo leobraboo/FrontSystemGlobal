@@ -1,4 +1,4 @@
-import { Stack } from "react-bootstrap";
+import { Stack , Form } from "react-bootstrap";
 import styled from "styled-components";
 
 export const Container = styled.div`
@@ -9,7 +9,7 @@ export const Container = styled.div`
   align-items: center;
   padding: 10px;
   position: fixed;
-  border-right: 5px solid #00CED1;
+  border-right: 2px solid #00CED1;
 
   :focus{
     background: red;
@@ -56,6 +56,23 @@ export const ButtonStyle = styled.button`
     background: #363636	;
   }
 `
+export const FormStyle = styled.button`
+  display: flex;
+  height: 45px;
+  margin-left: 5px;
+  border-radius: 10px;
+  border: none;
+  color: #00FFFF;
+  background: #1C1C1C;
+  align-items:center;
+  flex-direction: row;
+  text-decoration: none;
+  gap: 10px;
+
+  a:hover{
+    background: #363636	;
+  }
+`
 
 export const TextButton = styled.text`
 font-size: 1rem;
@@ -77,7 +94,7 @@ export const NavContainer = styled.div`
   position: fixed;
   gap: 40px;
   justify-content: flex-end;
-  border-bottom: 5px solid #00CED1;
+  border-bottom: 2px solid #00CED1;
 
   :focus{
     background: red;

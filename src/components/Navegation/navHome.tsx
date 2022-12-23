@@ -11,8 +11,9 @@ import { Link } from "react-router-dom";
 
 import {
   Container, Content, IconButton,
-  ButtonStyle, TextButton, UserContainer
+  ButtonStyle, TextButton, UserContainer, FormStyle
 } from "./styles";
+import { Form } from "react-bootstrap";
 
 
 interface NavHomeProps {
@@ -26,7 +27,7 @@ export function NavHome({ colapse }: NavHomeProps) {
       <Container>
         <UserContainer>
           <IconButton style={{ width: open ? "180px" : "30px", transition: "ease-in 500ms" }} onClick={() => setOpen(!open)} >
-            <IoChevronForward size={30} />
+            <IoChevronForward style={{ transform: open ? "rotate(180deg)" : "rotate(0deg)", transition: "ease-in 500ms" }} onClick={() => setOpen(!open)} size={30} />
           </IconButton>
         </UserContainer>
         <Content style={{ width: open ? "180px" : "40px", transition: "ease-in 500ms" }}>
@@ -39,6 +40,20 @@ export function NavHome({ colapse }: NavHomeProps) {
             <IconButton> <IoCartOutline size={25} /> </IconButton>
             <TextButton style={{ display: open ? "block" : "none" }}> Produtos </TextButton>
           </ButtonStyle>
+
+          <FormStyle>
+            <IoStorefrontOutline size={30} />
+            <Form.Select style={{ background: "#1C1C1C", border: "none", color: "white" }}>
+              <option>
+                <TextButton as={Link} to="/Sales" style={{ display: open ? "block" : "none" }}> Vendas </TextButton>
+              </option>
+              <option>
+                <ButtonStyle as={Link} to="/Products">
+                  <TextButton style={{ display: open ? "block" : "none" }}> Produtos </TextButton>
+                </ButtonStyle>
+              </option>
+            </Form.Select>
+          </FormStyle>
 
           <ButtonStyle as={Link} to="/Sales">
             <IconButton> <IoStorefrontOutline size={25} /> </IconButton>
