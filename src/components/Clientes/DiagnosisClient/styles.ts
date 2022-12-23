@@ -6,6 +6,7 @@ align-items: center;
 align-content: center;
 justify-items: center ;
 flex-direction: column;
+margin-bottom: 20px;
 .accordion-button:focus{
     box-shadow: none;
 }

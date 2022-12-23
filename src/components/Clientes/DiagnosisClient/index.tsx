@@ -1,9 +1,15 @@
 import { Button, Col, Row, Card, Form, Accordion } from 'react-bootstrap';
+import { ContentButton } from '../styles';
 import { DiagAccordion } from './styles';
 
 export function DiagnosisClient() {
   return (
     <div>
+      <Form.Select className="mb-3">
+        <option>Cliente</option>
+        <option value="1">...</option>
+      </Form.Select>
+
       <DiagAccordion defaultActiveKey="0">
         <Accordion.Item eventKey="0">
           <Accordion.Header>Diagnostico Perto</Accordion.Header>
@@ -84,7 +90,14 @@ export function DiagnosisClient() {
           </Accordion.Body>
         </Accordion.Item>
       </DiagAccordion>
-
+      <ContentButton>
+        <Button size="sm" variant="primary">
+          Limpar
+        </Button>
+        <Button size="sm" variant="primary">
+          Cadastrar
+        </Button>
+      </ContentButton>
     </div>
 
   )

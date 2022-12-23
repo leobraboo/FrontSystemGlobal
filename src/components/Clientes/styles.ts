@@ -10,3 +10,7 @@ width: 90vw;
 margin-left: 120px;
 height: auto;
 `
+export const ContentButton = styled.div`
+display: flex;
+justify-content: space-between;
+`
