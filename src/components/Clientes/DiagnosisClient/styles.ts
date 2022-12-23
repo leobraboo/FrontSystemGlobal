@@ -12,7 +12,8 @@ margin-bottom: 20px;
 }
 
 .accordion-button:not(.collapsed){
-    background-color: #1b022e;
+    // background-color: #1b022e;
+    background-color: black;
     color: var(--bs-accordion-bg);  
 }
 
