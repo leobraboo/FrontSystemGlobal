@@ -13,7 +13,6 @@ import {
   Container, Content, IconButton,
   ButtonStyle, TextButton, UserContainer, FormStyle
 } from "./styles";
-import { Form } from "react-bootstrap";
 
 
 interface NavHomeProps {
@@ -33,12 +32,12 @@ export function NavHome({ colapse }: NavHomeProps) {
         <Content style={{ width: open ? "180px" : "40px", transition: "ease-in 500ms" }}>
           <ButtonStyle as={Link} to="/Clients" >
             <IconButton> <IoPersonAdd size={22} /> </IconButton>
-            <TextButton style={{ display: open ? "block" : "none" }}> Clientes </TextButton>
+            <TextButton style={{ fontSize: open ? "16px" : "0px", transition: "ease-in 500ms" }}> Clientes </TextButton>
           </ButtonStyle>
 
           <ButtonStyle as={Link} to="/Products">
             <IconButton> <IoCartOutline size={25} /> </IconButton>
-            <TextButton style={{ display: open ? "block" : "none" }}> Produtos </TextButton>
+            <TextButton style={{ fontSize: open ? "16px" : "0px", transition: "ease-in 500ms" }}> Produtos </TextButton>
           </ButtonStyle>
 
           {/* <FormStyle>
@@ -57,48 +56,48 @@ export function NavHome({ colapse }: NavHomeProps) {
 
           <ButtonStyle as={Link} to="/Sales">
             <IconButton> <IoStorefrontOutline size={25} /> </IconButton>
-            <TextButton style={{ display: open ? "block" : "none" }}> Vendas </TextButton>
+            <TextButton style={{ fontSize: open ? "16px" : "0px", transition: "ease-in 500ms" }}> Vendas </TextButton>
           </ButtonStyle>
 
           <ButtonStyle as={Link} to="/NoteFiscale">
             <IconButton> <IoReaderOutline size={25} /> </IconButton>
-            <TextButton style={{ display: open ? "block" : "none" }}> Nota fiscal </TextButton>
+            <TextButton style={{ fontSize: open ? "16px" : "0px", transition: "ease-in 500ms" }}> Nota fiscal </TextButton>
           </ButtonStyle>
 
           <ButtonStyle as={Link} to="/Financial">
             <IconButton> <IoCashOutline size={25} /> </IconButton>
-            <TextButton style={{ display: open ? "block" : "none" }}> Financeiro </TextButton>
+            <TextButton style={{ fontSize: open ? "16px" : "0px", transition: "ease-in 500ms" }}> Financeiro </TextButton>
           </ButtonStyle>
 
           <ButtonStyle as={Link} to="/Grafics">
             <IconButton> <IoStatsChartSharp size={25} /> </IconButton>
-            <TextButton style={{ display: open ? "block" : "none" }}> Gráficos </TextButton>
+            <TextButton style={{ fontSize: open ? "16px" : "0px", transition: "ease-in 500ms" }}> Gráficos </TextButton>
           </ButtonStyle>
 
           <ButtonStyle as={Link} to="/Carrying">
             <IconButton> <TbTruck size={25} /> </IconButton>
-            <TextButton style={{ display: open ? "block" : "none" }}> Transportadora </TextButton>
+            <TextButton style={{ fontSize: open ? "16px" : "0px", transition: "ease-in 500ms" }}> Transportadora </TextButton>
           </ButtonStyle>
 
           <ButtonStyle as={Link} to="/Reports">
             <IconButton> <IoDocumentTextOutline size={25} /> </IconButton>
-            <TextButton style={{ display: open ? "block" : "none" }}> Relátorios </TextButton>
+            <TextButton style={{ fontSize: open ? "16px" : "0px", transition: "ease-in 500ms" }}> Relátorios </TextButton>
           </ButtonStyle>
 
           <ButtonStyle as={Link} to="/Configs">
             <IconButton> <IoSettingsOutline size={25} /> </IconButton>
-            <TextButton style={{ display: open ? "block" : "none" }}> Configurações </TextButton>
+            <TextButton style={{ fontSize: open ? "16px" : "0px", transition: "ease-in 500ms" }}> Configurações </TextButton>
           </ButtonStyle>
 
           <ButtonStyle as={Link} to="/Clients">
             <IconButton> <IoHeadset size={25} /> </IconButton>
-            <TextButton style={{ display: open ? "block" : "none" }}> Suporte </TextButton>
+            <TextButton style={{ fontSize: open ? "16px" : "0px", transition: "ease-in 500ms" }}> Suporte </TextButton>
           </ButtonStyle>
 
           <ButtonStyle as={Link} to="/Clients">
             <IconButton> <IoLogOutOutline size={25} /> </IconButton>
             {colapse ? (
-              <TextButton style={{ display: open ? "block" : "none" }}> Sair </TextButton>
+              <TextButton style={{ fontSize: open ? "16px" : "0px", transition: "ease-in 500ms" }}> Sair </TextButton>
             ) : <></>
             }
           </ButtonStyle>
