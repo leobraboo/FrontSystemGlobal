@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import fundo from '../../../public/assets/fundo.jpg'
+import fundo from '../../assets/fundo.jpg'
 
 export const LoginGeneral = styled.div`
 align-content: center;

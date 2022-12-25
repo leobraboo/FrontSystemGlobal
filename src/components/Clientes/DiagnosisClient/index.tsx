@@ -4,7 +4,7 @@ import { DiagAccordion } from './styles';
 
 export function DiagnosisClient() {
   return (
-    <div>
+    <div style={{ overflowY:"scroll", height:"80vh" }}>
       <Form.Select className="mb-3">
         <option>Cliente</option>
         <option value="1">...</option>

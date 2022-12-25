@@ -1,6 +1,6 @@
 import { Stack , Form } from "react-bootstrap";
 import styled from "styled-components";
-import fundobar from '../../../public/assets/laele.jpg'
+import fundobar from '../../assets/laele.jpg'
 
 export const Container = styled.div`
   display: flex;
