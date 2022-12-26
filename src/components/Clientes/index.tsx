@@ -6,7 +6,7 @@ import { ContentClient } from './styles';
 export function CClient() {
   return (
     <ContentClient>
-      <Card style={{ marginTop: "90px", width: "80%", height: "auto" }}>
+      <Card style={{ marginTop: "90px", width: "80%", height: "85vh" }}>
         <Card.Body>
           {/* <Tabs
             defaultActiveKey="register"
