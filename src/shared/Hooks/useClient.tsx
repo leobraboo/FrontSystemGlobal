@@ -15,9 +15,9 @@ export function UseClient() {
 
   const save = async () => {
     try {
-      console.log("ate aqui tudo bem")
       const result = await ClientService.save(client as IClient)
       setClient({ ...client, id:result.id})
+      console.log(result)
 
       toast("Salvo com sucesso! 🦄", {
         position: toast.POSITION.TOP_RIGHT
@@ -30,8 +30,12 @@ export function UseClient() {
   }
 
   const handleSaveOrUpdate = async () => {
-    console.log("handle")
-    client.id === "" ? save() : "teste"
+    client?.id === "" ? save() : "teste"
   }
+
+  const clearAllInputs = () => {
+    setClient(INITIAL_CLIENTE)
+  }
+
   return { handleChange, handleSaveOrUpdate }
 }

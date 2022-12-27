@@ -2,7 +2,6 @@ import { api } from '../utils/GlobalConfigs/api';
 import { IClient } from '../interface/IClient';
 class ClientService {
   async save(dataCliente: IClient) {
-    console.log("service")
     const { data } = await api.post('/customers', dataCliente)
     return data
   }
