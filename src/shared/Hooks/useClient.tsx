@@ -15,6 +15,7 @@ export function UseClient() {
 
   const save = async () => {
     try {
+      console.log("ate aqui tudo bem")
       const result = await ClientService.save(client as IClient)
       setClient({ ...client, id:result.id})
 
@@ -29,7 +30,8 @@ export function UseClient() {
   }
 
   const handleSaveOrUpdate = async () => {
-    client?.id === "" ? save() : "teste"
+    console.log("handle")
+    client.id === "" ? save() : "teste"
   }
   return { handleChange, handleSaveOrUpdate }
 }

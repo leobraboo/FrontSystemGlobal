@@ -8,10 +8,10 @@ interface AuxProps {
 const ClientContext = createContext({})
 
 function ClientProvider({ children }: AuxProps) {
-  const { handleChange } = UseClient()
+  const { handleChange , handleSaveOrUpdate } = UseClient()
 
   return (
-    <ClientContext.Provider value={{ handleChange }}>
+    <ClientContext.Provider value={{ handleChange, handleSaveOrUpdate }}>
       {children}
     </ClientContext.Provider>
   )

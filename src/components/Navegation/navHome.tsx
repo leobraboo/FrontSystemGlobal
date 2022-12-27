@@ -22,7 +22,7 @@ interface NavHomeProps {
 export function NavHome({ colapse }: NavHomeProps) {
   const [open, setOpen] = useState(false);
   return (
-    <div  >
+    <div>
       <Container>
         <UserContainer>
           <IconButton style={{ width: open ? "180px" : "30px", transition: "ease-in 500ms" }} onClick={() => setOpen(!open)} >

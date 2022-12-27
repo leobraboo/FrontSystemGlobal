@@ -6,7 +6,7 @@ import { GlobalContext } from '../../../shared/Context/globalContext';
 import { ContentButton } from '../styles';
 
 export function RegisterClient() {
-  const { handleChange } = useContext( ClientContext ) as { handleChange: React.ChangeEventHandler }
+  const { handleChange, handleSaveOrUpdate } = useContext(ClientContext) as { handleChange: React.ChangeEventHandler, handleSaveOrUpdate: () => void }
 
   const { client } = useContext(GlobalContext) as { client: IClient }
 
@@ -14,41 +14,39 @@ export function RegisterClient() {
     <Card style={{ width: "100%", height: "auto" }}>
       <Card.Body>
         <Form>
-        <Form.Group as={Col}>
-              <Form.Control onChange={handleChange} hidden name='id' value={client.id || ""} type="text" />
-            </Form.Group>
+          <Form.Control onChange={handleChange} hidden defaultValue={client?.id || ""} name="id" type="text" />
           <Row>
             <Form.Group as={Col}>
               <Form.Label>Nome</Form.Label>
-              <Form.Control onChange={handleChange} name='nome' value={client.nome || ""} type="text" />
+              <Form.Control onChange={handleChange} name='nome' defaultValue={client?.nome || ""} type="text" />
             </Form.Group>
             <Form.Group as={Col}>
               <Form.Label>CPF/CNPJ</Form.Label>
-              <Form.Control onChange={handleChange} name='cpfCnpj' value={client.cpfCnpj || ""} type="text" />
+              <Form.Control onChange={handleChange} name='cpfCnpj' defaultValue={client?.cpfCnpj || ""} type="text" />
             </Form.Group>
           </Row>
           <Form.Group>
             <Form.Label>Endereço</Form.Label>
-            <Form.Control onChange={handleChange} name='endereco' value={client.endereco || ""} />
+            <Form.Control onChange={handleChange} name='endereco' defaultValue={client?.endereco || ""} />
           </Form.Group>
           <Row>
             <Form.Group as={Col}>
               <Form.Label>Numero</Form.Label>
-              <Form.Control onChange={handleChange} name='numero' value={client.numero || ""} />
+              <Form.Control onChange={handleChange} name='numero' defaultValue={client?.numero || ""} />
             </Form.Group>
             <Form.Group as={Col}>
               <Form.Label>Complemento</Form.Label>
-              <Form.Control onChange={handleChange} name='complemento' value={client.complemento || ""} />
+              <Form.Control onChange={handleChange} name='complemento' defaultValue={client?.complemento || ""} />
             </Form.Group>
             <Form.Group as={Col}>
               <Form.Label>Bairro</Form.Label>
-              <Form.Control onChange={handleChange} name='bairro' value={client.bairro || ""} />
+              <Form.Control onChange={handleChange} name='bairro' defaultValue={client?.bairro || ""} />
             </Form.Group>
           </Row>
           <Row>
             <Form.Group as={Col}>
               <Form.Label>Cidade</Form.Label>
-              <Form.Control onChange={handleChange} name='cidae' value={client.cidade || ""} />
+              <Form.Control onChange={handleChange} name='cidae' defaultValue={client?.cidade || ""} />
             </Form.Group>
             <Form.Group as={Col}>
               <Form.Label>Estado</Form.Label>
@@ -59,28 +57,28 @@ export function RegisterClient() {
             </Form.Group>
             <Form.Group as={Col}>
               <Form.Label>CEP</Form.Label>
-              <Form.Control onChange={handleChange} name='cep' value={client.cep || ""} />
+              <Form.Control onChange={handleChange} name='cep' defaultValue={client?.cep || ""} />
             </Form.Group>
           </Row>
           <Row className="mb-3">
             <Form.Group as={Col}>
               <Form.Label>Telefone</Form.Label>
-              <Form.Control onChange={handleChange} name='telefone' value={client.telefone || ""} />
+              <Form.Control onChange={handleChange} name='telefone' defaultValue={client?.telefone || ""} />
             </Form.Group>
             <Form.Group as={Col}>
               <Form.Label>Celular</Form.Label>
-              <Form.Control onChange={handleChange} name='celular' value={client.celular || ""} />
+              <Form.Control onChange={handleChange} name='celular' defaultValue={client?.celular || ""} />
             </Form.Group>
             <Form.Group as={Col}>
               <Form.Label>Email</Form.Label>
-              <Form.Control onChange={handleChange} name='email' value={client.email || ""} />
+              <Form.Control onChange={handleChange} name='email' defaultValue={client?.email || ""} />
             </Form.Group>
           </Row>
           <ContentButton>
             <Button size="sm" variant="primary">
               Limpar
             </Button>
-            <Button size="sm" variant="primary">
+            <Button size="sm" onClick={handleSaveOrUpdate} variant="primary">
               Cadastrar
             </Button>
           </ContentButton>
