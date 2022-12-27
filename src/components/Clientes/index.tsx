@@ -2,6 +2,7 @@ import { Button, Card, Form, Tabs, Tab, Stack, Row, Col, Nav } from 'react-boots
 import { DiagnosisClient } from './DiagnosisClient';
 import { RegisterClient } from './RegisterClient';
 import { ContentClient } from './styles';
+import { IoPersonOutline, IoGlassesOutline, IoSearch } from "react-icons/io5";
 
 export function CClient() {
   return (
@@ -30,13 +31,22 @@ export function CClient() {
               <Col sm={3}>
                 <Nav variant="pills" className="flex-column">
                   <Nav.Item>
-                    <Nav.Link eventKey="first">Cadastro</Nav.Link>
+                    <Nav.Link eventKey="first">
+                      <IoPersonOutline size={30} style={{ marginRight:"10px" }}/>
+                      Cadastro
+                      </Nav.Link>
                   </Nav.Item>
                   <Nav.Item>
-                    <Nav.Link eventKey="second">Diagnostico</Nav.Link>
+                    <Nav.Link eventKey="second">
+                    <IoGlassesOutline size={30} style={{ marginRight:"10px" }}/>
+                      Diagnostico
+                      </Nav.Link>
                   </Nav.Item>
                   <Nav.Item>
-                    <Nav.Link eventKey="terciary">Pesquisar</Nav.Link>
+                    <Nav.Link eventKey="terciary">
+                    <IoSearch size={30} style={{ marginRight:"10px" }}/>
+                      Pesquisar
+                      </Nav.Link>
                   </Nav.Item>
                 </Nav>
               </Col>

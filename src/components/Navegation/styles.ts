@@ -76,7 +76,7 @@ export const FormStyle = styled.button`
   }
 `
 
-export const TextButton = styled.text`
+export const TextButton = styled.div`
 font-size: 1rem;
 align-items: center;
 color: #F0F8FF;

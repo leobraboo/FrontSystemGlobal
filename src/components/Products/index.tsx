@@ -1,6 +1,7 @@
 import { Button, Card, Form, Tabs, Tab, Stack, Row, Col, Nav } from 'react-bootstrap';
 import { RegisterProduct } from './RegisterProduct';
 import { ContentProduct } from './styles';
+import { IoGlasses, IoSearch } from "react-icons/io5";
 
 export function CProducts() {
   return (
@@ -12,10 +13,16 @@ export function CProducts() {
               <Col sm={3}>
                 <Nav variant="pills" className="flex-column">
                   <Nav.Item>
-                    <Nav.Link eventKey="first">Cadastro</Nav.Link>
+                    <Nav.Link eventKey="first">
+                      <IoGlasses size={30} style={{ marginRight:"10px" }}/>
+                      Cadastro
+                      </Nav.Link>
                   </Nav.Item>
                   <Nav.Item>
-                    <Nav.Link eventKey="second">Pesquisar</Nav.Link>
+                    <Nav.Link eventKey="second">
+                    <IoSearch size={30} style={{ marginRight:"10px" }}/>
+                      Pesquisar
+                      </Nav.Link>
                   </Nav.Item>
                 </Nav>
               </Col>

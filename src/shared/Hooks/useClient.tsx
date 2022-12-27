@@ -29,8 +29,22 @@ export function UseClient() {
     }
   }
 
+  const update = async () => {
+    try {
+      await ClientService.update(client as IClient)
+
+      toast("Atualizado com sucesso! ✅", {
+        position: toast.POSITION.TOP_RIGHT
+      });
+    } catch (error: any) {
+      toast.error(error?.response?.data?.erros, {
+        position: toast.POSITION.TOP_RIGHT
+      });
+    }
+  }
+
   const handleSaveOrUpdate = async () => {
-    client?.id === "" ? save() : "teste"
+    client?.id === "" ? save() : update()
   }
 
   const clearAllInputs = () => {
