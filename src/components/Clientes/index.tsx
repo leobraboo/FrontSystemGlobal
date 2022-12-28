@@ -9,6 +9,7 @@ export function CClient() {
     <ContentClient>
       <Card style={{ marginTop: "90px", width: "80%", height: "85vh" }}>
         <Card.Body>
+          {/* teste */}
           {/* <Tabs
             defaultActiveKey="register"
             className="mb-3"
