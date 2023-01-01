@@ -7,7 +7,7 @@ function App() {
   return (
     <>
       <NavBar/>
-      <NavHome colapse />
+      <NavHome />
       <AppRoutes />
     </>
   )

@@ -15,11 +15,7 @@ import {
 } from "./styles";
 
 
-interface NavHomeProps {
-  colapse: boolean;
-}
-
-export function NavHome({ colapse }: NavHomeProps) {
+export function NavHome() {
   const [open, setOpen] = useState(false);
   return (
     <div>
@@ -96,10 +92,7 @@ export function NavHome({ colapse }: NavHomeProps) {
 
           <ButtonStyle as={Link} to="/Clients">
             <IconButton> <IoLogOutOutline size={25} /> </IconButton>
-            {colapse ? (
-              <TextButton style={{ fontSize: open ? "16px" : "0px", transition: "ease-in 500ms" }}> Sair </TextButton>
-            ) : <></>
-            }
+            <TextButton style={{ fontSize: open ? "16px" : "0px", transition: "ease-in 500ms" }}> Sair </TextButton>
           </ButtonStyle>
 
         </Content>

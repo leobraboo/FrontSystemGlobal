@@ -33,9 +33,9 @@ export const data = {
 
 export function Homegeneral() {
   return (
-    <>
-      <AccordionGeneral />
-      <GeneralDv>
+    <div>
+      <AccordionGeneral/>
+      <GeneralDv >
         <ContainerData1 data={data}>
         </ContainerData1>
         <ContainerData2 data={data}>
@@ -43,6 +43,6 @@ export function Homegeneral() {
         <ContainerData3 data={data}>
         </ContainerData3>
       </GeneralDv>
-    </>
+    </div>
   )
 }
