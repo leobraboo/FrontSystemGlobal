@@ -18,7 +18,7 @@ export function RegisterProduct() {
           <Row className="mb-3">
             <Form.Group as={Col}>
               <Form.Label>Nome</Form.Label>
-              <Form.Control onChange={handleChange} defaultValue={produtos?.id || ""} name="id" type="text" />
+              <Form.Control onChange={handleChange} defaultValue={produtos?.nome || ""} name="nome" type="text" />
             </Form.Group>
 
             <Form.Group as={Col}>
@@ -63,7 +63,7 @@ export function RegisterProduct() {
             <Form.Label>Descrição</Form.Label>
             <Form.Control as="textarea" style={{ height: "100px" }} onChange={handleChange}  defaultValue={produtos?.descricao || ""} name="descricao" type="text" />
           </Form.Group>
-          <Button variant="primary" type="button">
+          <Button onClick={handleSaveProducts} variant="primary" type="button">
             Cadastrar
           </Button>
         </Form>
