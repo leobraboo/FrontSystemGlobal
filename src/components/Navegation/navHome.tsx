@@ -36,20 +36,6 @@ export function NavHome() {
             <TextButton style={{ fontSize: open ? "16px" : "0px", transition: "ease-in 500ms" }}> Produtos </TextButton>
           </ButtonStyle>
 
-          {/* <FormStyle>
-            <IoStorefrontOutline size={30} />
-            <Form.Select style={{ background: "#1C1C1C", border: "none", color: "white" }}>
-              <option>
-                <TextButton as={Link} to="/Sales" style={{ display: open ? "block" : "none" }}> Vendas </TextButton>
-              </option>
-              <option>
-                <ButtonStyle as={Link} to="/Products">
-                  <TextButton style={{ display: open ? "block" : "none" }}> Produtos </TextButton>
-                </ButtonStyle>
-              </option>
-            </Form.Select>
-          </FormStyle> */}
-
           <ButtonStyle as={Link} to="/Sales">
             <IconButton> <IoStorefrontOutline size={25} /> </IconButton>
             <TextButton style={{ fontSize: open ? "16px" : "0px", transition: "ease-in 500ms" }}> Vendas </TextButton>
