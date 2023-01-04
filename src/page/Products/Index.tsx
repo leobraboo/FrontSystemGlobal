@@ -1,9 +1,10 @@
 import { CProducts } from "../../components/Products";
+import { ProductProvider } from "../../shared/Context/ProductContext";
 
-export function Products(){
+export function Products() {
   return (
-      <>
-      <CProducts/>
-      </>
-  )  
+    <ProductProvider>
+      <CProducts />
+    </ProductProvider>
+  )
 }

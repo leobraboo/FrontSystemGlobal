@@ -1,7 +1,9 @@
-export function Sales(){
+import { CSales } from "../../components/Sales";
+
+export function Sales() {
   return (
-      <>
-      Sales
-      </>
-  )  
+    <>
+      <CSales />
+    </>
+  )
 }
